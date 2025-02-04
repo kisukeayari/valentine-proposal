@@ -30,6 +30,24 @@ body {
   filter: blur(0.1vmin);
   background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(255, 70, 101, 0.774)), repeating-linear-gradient(220deg, rgb(175, 113, 247) 0px, rgb(253, 115, 223) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, rgb(251, 145, 255) 0px, rgb(255, 144, 205) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, rgb(208, 139, 255) 0px, rgb(192, 104, 243) 19px, transparent 19px, transparent 22px), linear-gradient(90deg, rgb(255, 60, 93), rgb(213, 6, 255));
 }
+#musicButton {
+    position: absolute; /* Allow precise positioning */
+    top: 10px; /* Adjust as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Align center */
+    z-index: 1000; /* Ensure it's on top */
+    padding: 10px 20px;
+    background-color: #ff4d94; /* Match theme */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#musicButton:hover {
+    background: rgba(255, 0, 100, 1);
+}
 
 .flowers {
   position: relative;
