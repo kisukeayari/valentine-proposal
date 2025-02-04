@@ -48,7 +48,13 @@ body {
 #musicButton:hover {
     background: rgba(255, 0, 100, 1);
 }
-
+@media (max-width: 480px) {
+    #musicButton {
+        top: 3%;
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
 .flowers {
   position: relative;
   transform: scale(0.9);
