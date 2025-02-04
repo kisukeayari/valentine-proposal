@@ -95,4 +95,22 @@ img{
         margin-right: 0;
         width: 100%;
     }
+#musicButton {
+    position: absolute; /* Allow precise positioning */
+    top: 10px; /* Adjust as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Align center */
+    z-index: 1000; /* Ensure it's on top */
+    padding: 10px 20px;
+    background-color: #ff4d94; /* Match theme */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#musicButton:hover {
+    background: rgba(255, 0, 100, 1);
+}
 }
